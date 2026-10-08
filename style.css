@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 250px;
+}
+
+.line {
+    width: 100%;
+    border: 1px solid #828282;
+    height: 1px;
+}
+
+header {
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>a , 
+.aboutMeBLock > h1 {
+    text-decoration: none;
+    color: #828282;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+header>a.clicked {
+    color: #070707;
+}
+
+h1, p, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+}
+
+main h1 {
+    color: #070707;
+    font-size: 47px;
+}
+
+
+
+.mainInfo {
+    height: 266px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main{
+    margin-bottom: 100px;
+}
+.i18next {
+    transform: rotate(-90deg);
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.i18next button {
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #828282;
+}
+
+.i18next button.BTNClicked {
+    color: #070707;
+}
+
+.IMGContainer {
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+    position: relative;
+}
+
+.IMGContainer img {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+.aboutMeBLock  >h1{
+    font-size: 34px;
+    color: #070707;
+    font-weight: 600;
+
+}
+.aboutMeBLock{
+    height: 506px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #f6f6f6;
+    align-items: center;
+    justify-content: center;
+}
+.aboutMeBLock > p{
+    max-width: 500px;
+    text-align: center;
+}
+.SkillsBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 610px;
+    gap: 60px;
+}
+.SkillsBlock > h1{
+    font-size: 34px;
+}
+.skillCard{
+    width: 166px;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.skillCard > img{
+    width: 88px;
+    height: 88px;
+}
+.SkillsBlock > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+
+}
+.skillCard > p{
+    max-width: 100px;
+    text-align: center  ;
+    color: #828282;
+}
+.stars{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
