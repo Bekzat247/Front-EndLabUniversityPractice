@@ -3,9 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 .container {
-    padding: 0 250px;
+    padding: 0 16vw;
 }
 
 .line {
@@ -19,6 +23,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+    border-bottom: 1px solid #828282;
+    padding: 0 16vw;
 }
 
 header>a , 
@@ -53,16 +64,18 @@ main h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 88px;
 }
 main{
     margin-bottom: 100px;
 }
-.i18next {
-    transform: rotate(-90deg);
+.i18next {  
     font-weight: 800;
     display: flex;
     justify-content: center;
     gap: 5px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
 }
 
 .i18next button {
@@ -91,11 +104,11 @@ main{
     transform: translate(-50%, -50%);
     max-width: 100%;
 }
-.aboutMeBLock  >h1{
+.aboutMeBLock  >h1,
+.portfolioBlock > h1{
     font-size: 34px;
     color: #070707;
     font-weight: 600;
-
 }
 .aboutMeBLock{
     height: 506px;
@@ -115,7 +128,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 610px;
+    padding: 80px 16vw;
     gap: 60px;
 }
 .SkillsBlock > h1{
@@ -135,8 +148,9 @@ main{
 }
 .SkillsBlock > div{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 90px;
+    justify-content: center;
 
 }
 .skillCard > p{
@@ -148,4 +162,76 @@ main{
     display: flex;
     justify-content: space-between;
     width: 80%;
+}
+
+.portfolioBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    background: #f6f6f6;
+    padding: 80px 16vw;
+}
+.portfolioCards{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    
+}
+.portfolioCard{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+}
+.portfolioCard img{
+    
+    width: 100%;    
+    
+}
+.portfolioCard p{
+    text-decoration: underline;
+}
+.contactBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;  
+    padding: 120px 16vw 80px 16vw;
+}
+.contactBlock > h1{
+    font-size: 34px;
+}
+.contactBlock > p{
+    text-align: center;
+    font-size: 18px;
+}
+.contactBlock > button{
+    width: 200px;
+    height: 50px;
+    background: #070707;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 80px;
+    font-weight:600;
+}
+.contactBlock > span{
+    text-align: center;
+    color: #828282;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+.contactBlock > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin: 50px 0 45px 0;
+}
+.contactBlock > div > img{
+    cursor: pointer;
 }
